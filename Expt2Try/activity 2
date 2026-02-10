@@ -1,0 +1,12 @@
+to check driver vehicle speed-
+"""
+Created on Tue Feb 10 10:59:21 2026
+
+@author: sneha mali
+"""
+
+speed = int(input("Enter vehicle speed (km/h):"))
+if speed > 60:
+    print("overspeeding! Fine applicable.")
+else:
+    print("speed is within limit.")
