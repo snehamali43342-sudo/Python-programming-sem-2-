@@ -1,0 +1,16 @@
+ program to show attendance system 
+"""
+Created on Tue Mar 17 10:48:31 2026
+
+@author: sneha mali
+"""
+class1 = set(map(int , input("Enter roll numbers of class 1:").split()))
+class2 = set(map(int , input("Enter roll numbers of class 2:").split()))
+
+common_student = class1.intersection(class2)
+
+
+
+print("students present in both classes:", common_student)
+
+
