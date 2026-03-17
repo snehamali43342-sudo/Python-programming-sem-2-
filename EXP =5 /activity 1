@@ -1,0 +1,16 @@
+ program of library directory 
+"""
+Created on Tue Mar 17 10:36:44 2026
+
+@author: sneha mali 
+"""
+books = {
+    "Maths": 250,
+    "Science": 300,
+    "English": 200
+    }
+
+book_name = input("Enter book name to update :")
+new_price = int(input("Enter new price:"))
+books[book_name] = new_price
+print("Updated Library:", books)
