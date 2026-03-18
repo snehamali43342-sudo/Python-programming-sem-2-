@@ -1,0 +1,25 @@
+"""
+Program: Find average and topper marks
+Created on Tue Mar 18 17:30:00 2026
+
+@author: sneha mali
+"""
+
+# Input from user
+marks = []
+n = int(input("Enter number of students: "))
+
+# loop to take marks
+for i in range(1, n + 1):
+    m = float(input("Enter marks: "))
+    marks.append(m)
+
+# calculate average
+average = sum(marks) / len(marks)
+
+# find topper marks
+topper = max(marks)
+
+# display result
+print("\nAverage Marks:", average)
+print("Topper Marks:", topper)
