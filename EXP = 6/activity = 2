@@ -1,0 +1,13 @@
+# -*- program to create student attendance
+"""
+Created on Mon Mar 23 15:45:56 2026
+
+@author: sneha mali
+"""
+# Append attendance
+with open("attendance.txt", "a") as file:
+    name = input("Enter student name: ")
+    status = input("Present/Absent: ")
+    file.write(name + " - " + status + "\n")
+
+print("Attendance recorded successfully!")
