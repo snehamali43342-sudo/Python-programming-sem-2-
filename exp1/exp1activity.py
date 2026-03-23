@@ -2,7 +2,7 @@
 """
 Created on Tue Feb  3 10:40:43 2026
 
-@author: User
+@author: sneha mali
 """
 
 num1 =int(input("Enter first number:"))
