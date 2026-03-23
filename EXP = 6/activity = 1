@@ -1,0 +1,19 @@
+# -*- program to calculate daily expenses
+"""
+Created on Mon Mar 23 15:43:19 2026
+
+@author: sneha mali
+"""
+
+# Store daily expenses
+with open("expenses.txt", "a") as file:
+    expense = input("Enter today's expense: ")
+    file.write(expense + "\n")
+
+# Calculate total monthly expense
+total = 0
+with open("expenses.txt", "r") as file:
+    for line in file:
+        total += float(line.strip())
+
+print("Total Monthly Expense =", total)
