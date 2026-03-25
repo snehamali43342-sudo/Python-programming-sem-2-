@@ -1,4 +1,4 @@
- code for seat booking
+# code for seat booking
 """
 Created on Tue Feb 17 10:58:11 2026
 
