@@ -1,4 +1,4 @@
-code for receipt
+#code for receipt
 """
 Created on Tue Feb 17 10:43:57 2026
 
