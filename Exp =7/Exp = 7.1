@@ -1,0 +1,22 @@
+# Create a vehicle class to display fuel efficiency
+"""
+Created on Tue Apr 21 16:56:50 2026
+
+@author: sneha mali
+"""
+
+class Vehicle:
+    def __init__(self, name, distance, fuel):
+        self.name = name
+        self.distance = distance
+        self.fuel = fuel
+
+    def fuel_efficiency(self):
+        efficiency = self.distance / self.fuel
+        print("Vehicle:", self.name)
+        print("Fuel Efficiency:", efficiency, "km/L")
+
+
+# Example
+v = Vehicle("Car", 300, 15)
+v.fuel_efficiency()
