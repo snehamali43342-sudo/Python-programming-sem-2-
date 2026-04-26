@@ -1,0 +1,20 @@
+# Atm withdrawal system handles insufficient balance
+"""
+Created on Tue Apr 21 17:28:48 2026
+
+@author: sneha mali
+"""
+
+try:
+    balance = 5000
+    amount = int(input("Enter withdrawal amount: "))
+
+    if amount > balance:
+        raise Exception("Insufficient Balance!")
+
+    balance -= amount
+    print("Withdrawal Successful")
+    print("Remaining Balance:", balance)
+
+except Exception as e:
+    print("Error:", e)
