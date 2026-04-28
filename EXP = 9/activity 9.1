@@ -1,0 +1,18 @@
+# program to generate otp 
+"""
+Created on Tue Apr 28 10:41:58 2026
+
+@author: sneha mali
+"""
+
+import random
+
+def generate_otp(length=6):
+    otp = ""
+    for i in range(length):
+        otp += str(random.randint(0, 9))
+    return otp
+
+# Generate OTP
+otp = generate_otp()
+print("Your OTP is:", otp)
