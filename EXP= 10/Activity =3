@@ -1,0 +1,31 @@
+# grocery bill caculator
+"""
+Created on Mon May 4 15:34:09 2026
+
+@author: sneha
+"""
+
+import streamlit as st
+
+st.title("🛒 Grocery Bill Calculator")
+
+st.header("Enter item details")
+
+item_name = st.text_input("Item Name")
+price = st.number_input("Price per item", min_value=0.0)
+quantity = st.number_input("Quantity", min_value=1, step=1)
+
+if st.button("Add to Bill"):
+    total = price * quantity
+    st.success(f"{item_name} added! Cost: ₹{total:.2f}")
+
+st.header("Total Bill Calculator")
+
+prices = st.text_area("Enter all item totals (comma separated)")
+
+if st.button("Calculate Total"):
+    try:
+        total = sum([float(x) for x in prices.split(",")])
+        st.success(f"Total Bill: ₹{total:.2f}")
+    except:
+        st.error("Invalid input!")
