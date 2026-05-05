@@ -1,0 +1,37 @@
+# student result caculator app
+"""
+Created on Mon May 4 15:53:51 2026
+
+@author: sneha
+"""
+
+import streamlit as st
+
+st.title("🎓 Student Result Calculator")
+
+st.header("Enter Marks")
+
+subjects = ["Maths", "Science", "English", "History", "Computer"]
+marks = []
+
+for subject in subjects:
+    mark = st.number_input(f"{subject} Marks", min_value=0, max_value=100)
+    marks.append(mark)
+
+if st.button("Calculate Result"):
+    total = sum(marks)
+    percentage = total / len(subjects)
+
+    st.write(f"Total Marks: {total}")
+    st.write(f"Percentage: {percentage:.2f}%")
+
+    if percentage >= 90:
+        st.success("Grade: A+")
+    elif percentage >= 75:
+        st.success("Grade: A")
+    elif percentage >= 60:
+        st.warning("Grade: B")
+    elif percentage >= 40:
+        st.warning("Grade: C")
+    else:
+        st.error("Fail")
